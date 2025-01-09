@@ -1,54 +1,52 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 header {
-    
-    color: brown;
+  margin-top: 10px;
+  color: brown;
 }
 
 ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 30px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 30px;
 }
 
 li {
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 24px;
-    padding: 10px 20px;
-    border: 1px solid black;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: 1px solid black;
 }
 
 li:hover {
-    font-size: 22px;
-    border: 1px solid red;
-    /* font-style: italic; */
+  font-size: 28px;
+  border: 1px solid red;
 }
 
 li:active {
-    font-family: "Lucida Sans", sans-serif;
+  font-family: "Lucida Sans", sans-serif;
 }
 
 li:focus {
-    background-color: rgb(142, 247, 142);
-    }
+  background-color: rgb(142, 247, 142);
+}
 
 li:nth-child(odd) {
-    color: grey;
+  color: grey;
 }
 
 li::before {
-    content: ">>";
+  content: ">>";
 }
 
 /* Media query for flex-direction */
 @media (max-width: 700px) {
-    ul {
-        flex-direction: column;
-    }
+  ul {
+    flex-direction: column;
+  }
 }
-
